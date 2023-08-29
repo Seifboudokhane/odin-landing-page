@@ -1,3 +1,6 @@
+* {
+    border: 1px solid red;
+}
 html {
     box-sizing: border-box;
 }
@@ -7,13 +10,19 @@ html {
 
 body{
     margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+/* TOP HALF */
 
 nav {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     padding: 2%;
+    flex-grow: 0;
 }
 .logo {
     color: #f9faf8;
@@ -31,4 +40,39 @@ a {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
+}
+
+/* MAIN HALF */
+main {
+    flex-grow: 1;
+}
+/* section 1 */
+.section-1 {
+    background-color: #1F2937;
+    height: 100px;
+}
+
+/* section 2 */
+.section-2 {
+    background-color: white;
+    height: 100px;
+}
+
+/* section 3 */
+.section-3 {
+    background-color: #e5e7eb;
+    height: 100px;
+}
+
+/* section 4 */
+.section-4 {
+    background-color: white;
+    height: 100px;
+}
+
+/* BOTTOM HALF */
+footer {
+    height: 100px;
+    flex-grow: 0;
+    background-color: #1F2937;
 }
