@@ -1,6 +1,7 @@
-* {
+/* * {
     border: 1px solid red;
-}
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 html {
     box-sizing: border-box;
 }
@@ -13,6 +14,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* TOP HALF */
@@ -21,12 +23,13 @@ nav {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
-    padding: 2%;
+    padding: 2% 10%;
     flex-grow: 0;
 }
 .logo {
     color: #f9faf8;
     font-size: 24px;
+    font-weight: bold;
 }
 ul {
     list-style: none;
@@ -49,30 +52,71 @@ main {
 /* section 1 */
 .section-1 {
     background-color: #1F2937;
-    height: 100px;
+    height: fit-content;
+    padding: 10% 10%;
+    display: flex;
+    flex: 1 1 auto;
+    gap: 2%;
+}
+.section-1 .text {
+    width: 50%;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hero-title {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: extra-bold;
+    margin: 0;
+    flex: auto;
+}
+.hero-text {
+    margin: 0;
+    font-size: 18px;
+    color: #e5e7eb;
+    flex: auto;
+}
+.section-1 button {
+    color: white;
+    background-color: #3882f6;
+    font-size: 18px;
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+img {
+    flex: auto;
+    width: auto;
+    height: 250px;
 }
 
 /* section 2 */
 .section-2 {
     background-color: white;
     height: 100px;
+    padding: 2% 10%;
 }
 
 /* section 3 */
 .section-3 {
     background-color: #e5e7eb;
     height: 100px;
+    padding: 2% 10%;
 }
-
 /* section 4 */
 .section-4 {
     background-color: white;
     height: 100px;
+    padding: 2% 10%;
 }
 
 /* BOTTOM HALF */
 footer {
     height: 100px;
     flex-grow: 0;
+    flex-shrink: 0;
     background-color: #1F2937;
 }
