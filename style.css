@@ -183,8 +183,12 @@ p.author {
 }
 /* BOTTOM HALF */
 footer {
-    height: 100px;
-    flex-grow: 0;
-    flex-shrink: 0;
+    color: white;
+    height: 50px;
+    flex: none;
     background-color: #1F2937;
+    text-align: center;
+}
+footer div {
+    margin-top: 15px;
 }
